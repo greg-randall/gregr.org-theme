@@ -13,6 +13,6 @@
   <body style="background-image: url('wp-content/themes/gregr-org_theme/background.gif');background-repeat: repeat;">
                 <div class="jumbotron jumbotron-fluid" style="padding-top:25px;padding-bottom:25px;background-color: rgba(204, 204, 204, 0.3);">
         <div class="container text-center">
-            <h1 class="display-3"><?php if(!is_front_page()) { echo '<a href="'.get_site_url().'">'; } ?> Greg.Randall<?php if(!is_front_page()) { echo '</a>'; } ?></h1>
+            <h1 class="display-3" style="font-weight: 700; letter-spacing: 0.2em;"><?php echo get_bloginfo('name'); ?></h1>
         </div>
     </div>
