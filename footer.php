@@ -1,4 +1,4 @@
-<footer class="page-footer font-small" style="background-color: #999;">
+<footer class="page-footer font-small" style="background-color: #999;margin-top:15px;">
 	
 	<div class="text-center">
 		<a style="color:black;" href="//gregr.org"><?php echo get_bloginfo('name'); ?></a> <?php echo date("Y"); ?>©
