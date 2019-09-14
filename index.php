@@ -5,12 +5,9 @@
 
     $count_posts     = wp_count_posts();
     $published_posts = $count_posts->publish;
+        $last_page = ceil($published_posts/$posts_per_page);
+        echo "<!-- debug 0b - $last_page -->";
     
-    if($published_posts/$posts_per_page==round($published_posts/$posts_per_page)){
-        $last_page = $published_posts/$posts_per_page;
-    }else{
-        $last_page = round($published_posts/$posts_per_page) + 1;
-    }
 
 
     if ( array_key_exists('p', $_GET) & is_numeric($_GET['p']) ) {
