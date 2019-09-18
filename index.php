@@ -5,20 +5,14 @@
 
     $count_posts     = wp_count_posts();
     $published_posts = $count_posts->publish;
-        $last_page = ceil($published_posts/$posts_per_page);
-        echo "<!-- debug 0b - $last_page -->";
+    $last_page = ceil($published_posts/$posts_per_page);
     
-
-
     if ( array_key_exists('p', $_GET) & is_numeric($_GET['p']) ) {
         
-        echo "<!-- debug 1 url-". $_GET['p'] ." published-posts- $published_posts math- $last_page-->";
         if($_GET['p']<=$last_page){
             $page = intval(trim($_GET['p']));
-            echo "<!-- debug 2a $page -->";
         }else {
             $page = $last_page;
-            echo "<!-- debug 2b $page -->";
         }
 
     } else {
@@ -33,7 +27,7 @@
     foreach ($postslist as $post):
 ?> 
             
-            <h2 style="margin-left:-10px;"><?php echo $post->post_title; ?></h2>
+            <h2 style="margin-left:-10px;" id="<?php echo $post->post_name; ?>"><?php echo $post->post_title; ?></h2>
             <div style="overflow: auto;">
             <p style="margin-left:10px;"><em><a href="<?php echo esc_url(get_permalink($post->id)); ?>"><?php echo date('F jS Y', strtotime($post->post_date)); ?></a></em></p> 
             <?php
