@@ -9,10 +9,12 @@
     <title><?php get_the_title(); ?></title>
 
     <?php wp_head(); ?>
+    
+    <link rel="stylesheet" href="wp-content/themes/gregr-org_theme/custom.css">
   </head>
   <body style="background-image: url('wp-content/themes/gregr-org_theme/background.gif');background-repeat: repeat;">
                 <div class="jumbotron jumbotron-fluid" style="padding-top:25px;padding-bottom:25px;background-color: rgba(204, 204, 204, 0.3);">
-        <div class="container text-center">
-            <h1 class="display-3" style="font-weight: 700; letter-spacing: 0.2em;"><?php echo get_bloginfo('name'); ?></h1>
+        <div class="container">
+            <h1 class="display-1-header font-weight-bold text-center"><?php echo get_bloginfo('name'); ?></h1>
         </div>
     </div>
