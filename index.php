@@ -54,10 +54,20 @@
     echo '</div>';
     echo '</div>';
     wp_reset_postdata();
-?>
 
+    
+    //https://stackoverflow.com/questions/36918384/how-to-list-all-posts-of-a-category-in-wordpress-shortcode
+    
+    $args = array('numberposts' => -1, 'post_type' =>  'post' ); 
+    $cat_posts = get_posts($args);
 
+    $markup = "\n\n\n<ul class=\"sr-only\">\n";  
+    foreach ($cat_posts as $post) {
+        $markup .= "\t<li><a href='" . get_permalink($post->ID) . "'>" . $post->post_title . "</a></li>\n";
+    }
+    $markup .= "</ul>\n\n";
+    
+    echo $markup;
 
-<?php
     get_footer();
 ?>

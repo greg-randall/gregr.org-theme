@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title><?php get_the_title(); ?></title>
 
     <?php wp_head(); ?>
@@ -15,6 +15,6 @@
   <body style="background-image: url('wp-content/themes/gregr-org_theme/background.gif');background-repeat: repeat;">
                 <div class="jumbotron jumbotron-fluid" style="padding-top:25px;padding-bottom:25px;background-color: rgba(204, 204, 204, 0.3);">
         <div class="container">
-            <h1 class="display-1-header font-weight-bold text-center"><?php echo get_bloginfo('name'); ?></h1>
+            <h1 class="display-1-header font-weight-bold text-center"><a href="<?php echo  get_site_url(); ?>" style="color:#212529; text-decoration: none;"><?php echo get_bloginfo('name'); ?></a></h1>
         </div>
     </div>

@@ -1,7 +1,12 @@
-<footer class="page-footer font-small" style="background-color: #999;margin-top:15px;">
+<footer class="page-footer font-small footer" style="margin-top:15px;" >
+<div class="container text-center">
+    <a href="//instagram.com/greg.randall/"><i class="fa fa-instagram"></i><div class="sr-only">Instagram</div></a>
+	<a href="//flickr.com/photos/gregr"><i class="fa fa-flickr"></i><div class="sr-only">Flickr</div></a>
+	<a href="//github.com/greg-randall"><i class="fa fa-github"></i><div class="sr-only">GitHub</div></a>
+	<a href="//youtube.com/channel/UCxzw1hRBxgv7uU-GWy6gxTQ"><i class="fa fa-youtube"></i><div class="sr-only">Youtube</div></a>
 	
-	<div class="text-center">
-		<a style="color:black;" href="//gregr.org"><?php echo get_bloginfo('name'); ?></a> <?php echo date("Y"); ?>©
+  	<a href="//gregr.org"><?php echo get_bloginfo('name'); ?> <?php echo date("Y"); ?>©</a> 
+	  
 	</div>
 </footer>
 
